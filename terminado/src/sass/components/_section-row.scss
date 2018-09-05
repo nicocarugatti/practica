@@ -1,0 +1,379 @@
+.section-row {
+
+
+}
+
+//CLIENTES ROW
+.section-row.row-clientes{
+
+    padding-top:110px;
+    padding-bottom:160px;
+    .container{
+        position:relative;
+    }
+
+    .flex-direction-nav{
+
+        a:before{
+            content:none;
+        }
+        a{
+            width:20px;
+            height:31px;
+            text-indent: 200px;
+            opacity: 1;
+        }
+        .flex-prev{
+            background-image: url(../images/img-arrow-left.png);
+        }
+        .flex-next{
+            background-image: url(../images/img-arrow-right.png);
+        }
+    }
+
+    .slides{
+
+        li{
+            height:106px;
+            text-align: center;
+            vertical-align: middle;
+            a{
+                display:block;
+                height: 100%;
+                vertical-align: middle;
+            }
+            .helper {
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+
+//NOSOTROS ROW
+.section-row.row-nosotros{
+
+    padding-bottom:160px;
+    .container{
+        position:relative;
+    }
+
+    .col-xs-12{
+
+        h3{
+            font-size:35px;
+            line-height: 42px;
+            color:#FFF;
+            font-family: $lato;
+            font-weight: 900;
+            padding:0 0 24px;
+            margin-top: 11px;
+        }
+        p{
+            font-size:20px;
+            line-height: 30px;
+            color:#FFF;
+            font-family: $lato;
+            font-weight: 300;
+            padding:0 0 40px;
+        }
+        .images{
+            .item-multimedia{
+                padding:0 0 20px;
+                width:100%;
+            }
+            img{
+                width:100%;
+            }
+        }
+    }
+
+}
+
+//FICHA ROW
+.section-row.row-ficha{
+
+    padding-bottom:160px;
+    .container{
+        position:relative;
+    }
+    a.arrow{
+        position:absolute;
+        top:20px;
+        width:20px;
+        height:31px;
+        text-indent: -900px;
+        overflow: hidden;
+        background:url(../images/img-arrow-left.png) center center no-repeat;
+        &.arrow-left{
+            left:-54px;
+            background-image: url(../images/img-arrow-left.png);
+        }
+        &.arrow-right{
+            right:-54px;
+            background-image: url(../images/img-arrow-right.png);
+        }
+    }
+
+    .col-xs-12{
+
+        h3{
+            font-size:35px;
+            line-height: 42px;
+            color:#FFF;
+            font-family: $lato;
+            font-weight: 900;
+            padding:0 0 24px;
+            margin-top: 11px;
+        }
+        .icons{
+
+            margin:0 0 27px;
+
+            .cat-icon{
+
+                float:left;
+                height:26px;
+                margin:0 14px 0 0;
+                padding:0 0 0 20px;
+                background-repeat:no-repeat;
+                background-size: contain;
+                font-size:16px;
+                line-height: 16px;
+                color:#FFF;
+                font-family: $lato;
+                font-weight: 200;
+
+                &.cat-contenidos{
+                    background-image: url(../images/cat-contenidos.png);
+                }
+                &.cat-diseno{
+                    background-image: url(../images/cat-diseno.png);
+                }
+                &.cat-creatividad{
+                    background-image: url(../images/cat-creatividad.png);
+                }
+                &.cat-eventos{
+                    background-image: url(../images/cat-eventos.png);
+                }
+            }
+
+        }
+        p{
+            font-size:20px;
+            line-height: 30px;
+            color:#FFF;
+            font-family: $lato;
+            font-weight: 300;
+            padding:0 0 40px;
+        }
+        .images{
+            .item-multimedia{
+                padding:0 0 20px;
+            }
+            img{
+                width:100%;
+            }
+        }
+    }
+
+}
+
+//SLIDER ROW
+.section-row.row-slider{
+
+    .flexslider{
+        border:0;
+        background: none;
+        margin:0;
+    }
+    .flex-direction-nav a{
+        height:57px;
+        &:before{
+            color:#FFF;
+        }
+    }
+    .flex-control-nav{
+
+        bottom:110px;
+
+        li{
+            margin:0;
+            a{
+                display:inline-block;
+                list-style:none;
+                text-indent: -900px;
+                overflow: hidden;
+                width:17px;
+                height:17px;
+                margin:0 3px;
+                cursor:pointer;
+                background:url(../images/img-dot.png) no-repeat;
+                &.flex-active{
+                    border-radius:17px;
+                    background:#D6D6D6;
+                }
+            }
+        }
+    }
+
+    .inner-slide{
+        position:relative;
+    }
+
+    .overlay{
+        background:rgba(40,40,40,0.3);
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        margin:0;
+        .inner{
+            position:relative;
+        }
+
+        .type{
+            position:absolute;
+            top:-82px;
+            left:34px;
+            width:61px;
+            height:61px;
+            background:url(../images/img-pic.png) center center no-repeat;
+            &.vid{
+                background-image:url(../images/img-vid.png);
+            }
+            &.pic{}
+        }
+        .text{
+            p{
+                font-size: 35px;
+                line-height:40px;
+                font-weight: 700;
+                color:#FFF;
+                margin:0;
+                padding:26px 84px 26px 34px;
+            }
+            .icons{
+                position:absolute;
+                top:27px;
+                right:40px;
+                .cat-icon{
+                    float:left;
+                    width:28px;
+                    height:46px;
+                    margin:0 0 0 14px;
+                    background-repeat:no-repeat;
+                    background-size: contain;
+                    &.cat-contenidos{
+                        background-image: url(../images/cat-contenidos.png);
+                    }
+                    &.cat-diseno{
+                        background-image: url(../images/cat-diseno.png);
+                    }
+                    &.cat-creatividad{
+                        background-image: url(../images/cat-creatividad.png);
+                    }
+                    &.cat-eventos{
+                        background-image: url(../images/cat-eventos.png);
+                    }
+                }
+            }
+        }
+    }
+    .multimedia{
+        height:641px;
+        background-size:cover;
+        @media only screen and (max-width: 1100px) {
+            height:450px;
+        }
+        @media only screen and (max-width: 600px) {
+            height:350px;
+        }
+        img{
+            height: 100%;
+        }
+    }
+}
+
+
+//PROYCTOS ROW
+.section-row.row-proyectos{
+    .container{
+        padding:10px 16px 170px;
+    }
+    .col-xs-4{
+        position: relative;
+        padding:0 10px;
+    }
+    .proyecto{
+        margin: 14px 0px;
+        position: relative;
+    }
+    .type{
+        position:absolute;
+        top:20px;
+        left:20px;
+        width:45px;
+        height:45px;
+        background:url(../images/img-pic.png) center center no-repeat;
+        background-size: contain;
+        &.vid{
+            background-image:url(../images/img-vid.png);
+        }
+        &.pic{
+            background-image:url(../images/img-pic.png);
+        }
+    }
+    .overlay{
+        background:rgba(140, 140, 140, 0.3);
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        .inner{
+            position:relative;
+        }
+        .text{
+            p{
+                font-size: 20px;
+                line-height:22px;
+                font-weight: 700;
+                color:#FFF;
+                margin:0;
+                padding:28px 46px 26px 16px;
+            }
+            .icons{
+                position:absolute;
+                top:35px;
+                right:15px;
+                .cat-icon{
+                    float:left;
+                    width:21px;
+                    height:34px;
+                    margin:0 0 0 9px;
+                    background-repeat:no-repeat;
+                    background-size: contain;
+                    &.cat-contenidos{
+                        background-image: url(../images/cat-contenidos.png);
+                    }
+                    &.cat-diseno{
+                        background-image: url(../images/cat-diseno.png);
+                    }
+                    &.cat-creatividad{
+                        background-image: url(../images/cat-creatividad.png);
+                    }
+                    &.cat-eventos{
+                        background-image: url(../images/cat-eventos.png);
+                    }
+                }
+            }
+        }
+    }
+    .multimedia{
+        img{
+            width:100%;
+        }
+    }
+}
