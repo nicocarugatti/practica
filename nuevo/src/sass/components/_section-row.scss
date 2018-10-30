@@ -1,6 +1,52 @@
 .section-row {
-//DIVIDI CADA PARTE DEL DISEÑO EN UNA SECCION NUEVA
 
-    font-family: $lato;//VARIABLE DEFINIDA EN CONFIG QUE DEFINE LA TIPOGRAFIA DE GOOGLE FONTS LATO
 
+}
+
+//clientes
+.section-row.row-clientes{
+
+    padding-top: 110px;
+    padding-bottom:160px;
+    .container{
+        position: relative;
+    }
+
+    .flex-direction-nav{
+
+        a:before{
+            content: none;
+        }
+        a{
+            width: 20px;
+            height: 31px;
+            text-indent: 200px;
+            opacity: 1;
+        }
+        .flex-prev{
+            background-image: url(../images/img-arrow-left.png);
+        }
+        .flex-next{
+            background-image: url(../images/img-arrow-right.png);
+        }
+    }
+
+    .slides{
+
+        li{
+            height: 106px;
+            text-align: center;
+            vertical-align: middle;
+            a{
+                display: block;
+                height: 100%;
+                vertical-align: middle;
+            }
+            .helper {
+                display: inline-block;
+                height: 100%
+                vertical-align:middle;
+            }
+        }
+    }
 }
